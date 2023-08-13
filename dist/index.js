@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.client = void 0;
+const dotenv_1 = require("dotenv");
+const ExtendedClient_1 = require("./class/ExtendedClient");
+(0, dotenv_1.config)();
+exports.client = new ExtendedClient_1.default();
+exports.client.start();
+exports.client.loadModules();
+exports.client.deploy();
